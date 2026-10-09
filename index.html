@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071b17">
+  <title>EcoWatt | Inteligencia energética para tu hogar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div id="landing" class="landing">
+    <nav class="landing-nav">
+      <a class="brand" href="#inicio"><span class="brand-mark">ϟ</span><span>Eco<span>Watt</span></span></a>
+      <div class="landing-links"><a href="#beneficios">Beneficios</a><a href="#como-funciona">Cómo funciona</a><a href="#modulos">Plataforma</a></div>
+      <div class="nav-actions"><button class="btn btn-quiet" data-auth="login">Ingresar</button><button class="btn btn-primary" data-auth="register">Crear cuenta <span>↗</span></button></div>
+      <button class="mobile-menu" id="mobileMenu" aria-label="Abrir menú">☰</button>
+    </nav>
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="pulse"></span> INTELIGENCIA ENERGÉTICA PARA EL HOGAR PERUANO</div>
+          <h1>Tu energía,<br>en <span>perspectiva.</span></h1>
+          <p class="hero-text">Entiende tu consumo eléctrico, anticipa tus gastos y descubre oportunidades reales de ahorro. Todo en un solo lugar.</p>
+          <div class="hero-actions"><button class="btn btn-primary btn-lg" data-auth="register">Empieza gratis <span>→</span></button><button class="btn btn-outline btn-lg" id="exploreDemo"><span class="play">▶</span> Explorar demostración</button></div>
+          <div class="hero-proof"><div class="avatar-stack"><i>⚡</i><i>⌂</i><i>☀</i></div><span><b>Decisiones más inteligentes</b><br>Consumo claro. Ahorro consciente.</span></div>
+        </div>
+        <div class="hero-visual">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="glow"></div>
+          <div class="energy-house">
+            <div class="house-roof"></div><div class="house-body"><div class="solar-panel"></div><div class="house-window"></div><div class="house-door"></div></div>
+            <div class="house-base"></div><div class="energy-ring ring-a"></div><div class="energy-ring ring-b"></div>
+          </div>
+          <div class="float-card float-top"><span class="mini-icon">↗</span><div><small>Consumo mensual</small><strong>130 <em>kWh</em></strong><small class="green-text">↓ 5% vs. periodo anterior</small></div></div>
+          <div class="float-card float-bottom"><span class="mini-icon sun">☀</span><div><small>Ahorro potencial</small><strong>S/ 30.50</strong><small>Estimación mensual</small></div></div>
+          <div class="hero-caption">ENERGÍA MÁS INTELIGENTE <span>•</span> FUTURO MÁS SOSTENIBLE</div>
+        </div>
+        <div class="hero-bottom"><span>01 — CONOCE</span><span>02 — COMPARA</span><span>03 — AHORRA</span><span class="scroll-note">DESLIZA PARA EXPLORAR ↓</span></div>
+      </section>
+      <section class="benefits section-wrap" id="beneficios">
+        <div class="section-heading"><div class="eyebrow">ENERGÍA SIN COMPLICACIONES</div><h2>De tu recibo a mejores<br><span>decisiones.</span></h2><p>Convierte números difíciles de interpretar en información útil para tu hogar.</p></div>
+        <div class="benefit-grid">
+          <article class="benefit-card"><span class="feature-icon">⌁</span><h3>Entiende tu consumo</h3><p>Revisa kWh, costos estimados y cambios entre periodos en un panel claro.</p><span class="card-index">01 / CLARIDAD</span></article>
+          <article class="benefit-card"><span class="feature-icon">⌁</span><h3>Anticipa tus gastos</h3><p>Explora proyecciones orientativas basadas en tu historial registrado.</p><span class="card-index">02 / PREVISIÓN</span></article>
+          <article class="benefit-card"><span class="feature-icon">☀</span><h3>Encuentra tu ahorro</h3><p>Define metas, simula hábitos y conoce el potencial de la energía solar.</p><span class="card-index">03 / EFICIENCIA</span></article>
+        </div>
+      </section>
+      <section class="how-section" id="como-funciona"><div class="section-wrap how-grid"><div><div class="eyebrow">SENCILLO DESDE EL PRIMER DÍA</div><h2>Tres pasos para<br><span>tomar el control.</span></h2></div><div class="steps"><div class="step"><b>01</b><div><h3>Registra tu recibo</h3><p>Ingresa el periodo y los kWh de tu factura eléctrica.</p></div></div><div class="step"><b>02</b><div><h3>Visualiza tu historia</h3><p>Compara meses, revisa tendencias y calcula costos estimados.</p></div></div><div class="step"><b>03</b><div><h3>Mejora tus hábitos</h3><p>Fija una meta y sigue recomendaciones para ahorrar energía.</p></div></div></div></div></section>
+      <section class="modules-section section-wrap" id="modulos"><div class="section-heading"><div class="eyebrow">UNA PLATAFORMA QUE CRECE CONTIGO</div><h2>Mucho más que<br><span>un recibo.</span></h2></div><div class="module-grid"><div class="module-card"><span>◫</span><h3>EcoWatt Home</h3><p>Recibos, dashboard, historial y metas de ahorro.</p><small>DISPONIBLE EN ESTA DEMO</small></div><div class="module-card"><span>☀</span><h3>EcoWatt GeoSolar</h3><p>Explora escenarios solares con supuestos editables.</p><small>MÓDULO DE SIMULACIÓN</small></div><div class="module-card"><span>⌁</span><h3>EcoWatt Intelligence</h3><p>Ideas y proyecciones orientativas basadas en tus datos.</p><small>EVOLUCIÓN FUTURA</small></div><div class="module-card"><span>⌘</span><h3>EcoWatt IoT</h3><p>Conecta medidores compatibles en una futura versión.</p><small>INTEGRACIÓN FUTURA</small></div></div></section>
+      <section class="cta-section"><div class="cta-inner"><div class="eyebrow">TU HOGAR, TU ENERGÍA</div><h2>Empieza a mirar tu consumo<br>de otra manera.</h2><p>Crea tu espacio energético y convierte los datos en acciones.</p><button class="btn btn-primary btn-lg" data-auth="register">Crear mi espacio EcoWatt ↗</button></div></section>
+    </main>
+    <footer class="landing-footer"><a class="brand" href="#inicio"><span class="brand-mark">ϟ</span><span>Eco<span>Watt</span></span></a><span>Inteligencia energética para hogares peruanos.</span><span>© 2026 EcoWatt · Demo de interfaz</span></footer>
+  </div>
+
+  <div id="app" class="app-shell hidden">
+    <aside class="sidebar">
+      <a class="brand sidebar-brand" href="#"><span class="brand-mark">ϟ</span><span>Eco<span>Watt</span></span></a>
+      <div class="workspace-label">ESPACIO DE TRABAJO</div>
+      <button class="home-switch"><span class="home-avatar">⌂</span><span><b id="sideHomeName">Mi hogar</b><small>Plan personal</small></span><span class="switch-arrow">⌄</span></button>
+      <div class="nav-label">GENERAL</div>
+      <nav class="side-nav">
+        <button class="side-link active" data-page="dashboard"><span>▦</span> Panel principal</button>
+        <button class="side-link" data-page="bills"><span>▤</span> Consumo y recibos</button>
+        <button class="side-link" data-page="history"><span>⌁</span> Historial y gráficos</button>
+        <button class="side-link" data-page="compare"><span>⇄</span> Comparar periodos</button>
+        <button class="side-link" data-page="goals"><span>◎</span> Metas de ahorro</button>
+        <div class="nav-label">INTELIGENCIA</div>
+        <button class="side-link" data-page="devices"><span>▧</span> Electrodomésticos</button>
+        <button class="side-link" data-page="solar"><span>☀</span> GeoSolar</button>
+        <button class="side-link" data-page="location"><span>⌖</span> Ubicación en vivo</button>
+        <button class="side-link" data-page="insights"><span>✧</span> Recomendaciones</button>
+        <div class="nav-label">CUENTA</div>
+        <button class="side-link" data-page="settings"><span>⚙</span> Configuración</button>
+        <button class="side-link" data-page="help"><span>ⓘ</span> Ayuda y privacidad</button>
+      </nav>
+      <div class="sidebar-bottom"><div class="support-card"><span class="support-symbol">✦</span><b>Pequeños cambios,<br>gran impacto.</b><small>Tu energía cuenta.</small></div><button id="logoutBtn" class="side-link"><span>↪</span> Cerrar sesión</button><div class="profile-row"><div class="profile-avatar">E</div><div><b id="profileEmail">Demo EcoWatt</b><small>Cuenta personal</small></div><span class="online-dot"></span></div></div>
+    </aside>
+    <main class="app-main">
+      <header class="app-topbar"><div><div class="breadcrumbs">EcoWatt <span>/</span> <b id="breadcrumb">Panel principal</b></div><h1 id="pageTitle">Buenos días, bienvenido <span>✦</span></h1><p id="pageSubtitle">Aquí tienes el resumen energético de tu hogar.</p></div><div class="topbar-actions"><span class="today-chip" id="todayChip">● Resumen de hoy</span><button class="icon-btn" title="Notificaciones">♧</button><button class="btn btn-primary" id="addBillTop">＋ Registrar consumo</button></div></header>
+      <div id="pageContent" class="page-content"></div>
+      <footer class="app-footer"><span>EcoWatt <b>•</b> Energía más inteligente</span><span>Los costos y predicciones son estimaciones, no una factura oficial.</span></footer>
+    </main>
+  </div>
+
+  <div id="authModal" class="modal-backdrop hidden"><div class="auth-modal"><button class="modal-close" id="closeAuth">×</button><a class="brand modal-brand" href="#"><span class="brand-mark">ϟ</span><span>Eco<span>Watt</span></span></a><div class="eyebrow">TU ESPACIO ENERGÉTICO</div><h2 id="authTitle">Bienvenido de nuevo</h2><p id="authDescription">Ingresa para consultar la energía de tu hogar.</p><form id="authForm"><label>Correo electrónico<input id="authEmail" type="email" placeholder="tu@correo.com" required></label><label>Contraseña<input id="authPassword" type="password" placeholder="Mínimo 6 caracteres" minlength="6" required></label><button class="btn btn-primary btn-full" id="authSubmit">Ingresar →</button></form><button id="authSwitch" class="text-button">¿No tienes cuenta? Crear una</button><p class="demo-note">Demo local: esta pantalla no crea cuentas seguras ni sincroniza datos con un servidor.</p></div></div>
+  <div id="ecoBuddy" class="eco-buddy" aria-label="Asistente EcoWatt">
+    <button class="buddy-toggle" id="buddyToggle" aria-label="Hablar con Eco, asistente EcoWatt"><span class="buddy-aura"></span><span class="buddy-bulb"><i></i><b>ϟ</b></span><span class="buddy-spark">✦</span></button>
+    <div class="buddy-chat" id="buddyChat"><button class="buddy-close" id="buddyClose" aria-label="Cerrar asistente">×</button><small>ASISTENTE ECOWATT</small><strong>¡Hola! Soy Eco ⚡</strong><p id="buddyMessage">Te ayudo a entender tu consumo y encontrar oportunidades de ahorro.</p><div class="buddy-actions"><button id="buddySpeak">🔊 Escuchar</button><button id="buddyAsk">Analizar mi energía</button></div></div>
+  </div>
+  <div id="toast" class="toast"></div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
